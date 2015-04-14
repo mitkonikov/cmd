@@ -1,0 +1,9 @@
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\bin\Debug\MConsole.exe.config
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\bin\Debug\MConsole.exe
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\bin\Debug\MConsole.pdb
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.csprojResolveAssemblyReference.cache
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.Main.resources
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.Properties.Resources.resources
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.csproj.GenerateResource.Cache
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.exe
+c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.pdb
