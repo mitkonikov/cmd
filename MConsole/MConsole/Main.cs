@@ -41,31 +41,50 @@ namespace MConsole
                     else
                     {
                         // Line = 0 (for the first time)
-                        if (textBox1.Lines[Line] == "Help" || textBox1.Lines[Line] == "help" || textBox1.Lines[Line] == "HELP")
+                        if (textBox1.Lines[Line].ToLower() == "help")
                         {
                             // Exec the help command
-                            LineLOC(); // Add a line for the Showing Text
                             // Add a text into the textbox1
-                            textBox1.Text = textBox1.Text + Environment.NewLine + "CLOSE -- Closing the app!";
-                            LineLOC(); // Add a line for the next user input
+                            textBox1.Text += Environment.NewLine + "CLOSE -- Closing the app!";
+                            textBox1.Text += Environment.NewLine + "DIR -- Directory options";
+                            LineLOC(3); // Add lines for the text outputed + Add a line for the next user input
                             // ---- Set the cursor at the last letter ----
                             textBox1.SelectionStart = textBox1.Text.Length;
                             textBox1.SelectionLength = 0;
                             // -------------------------------------------
                         }
+                        else if (textBox1.Lines[Line].ToLower() == "dir")
+                        {
+                            // Exec the help command
+                            // Add a text into the textbox1
+                            textBox1.Text += Environment.NewLine + "DIR [current] - Gets the current directory";
+                            LineLOC(2); // Add lines for the text outputed + Add a line for the next user input
+                            // ---- Set the cursor at the last letter ----
+                            textBox1.SelectionStart = textBox1.Text.Length;
+                            textBox1.SelectionLength = 0;
+                            // -------------------------------------------
+                        }
+                        else if (textBox1.Lines[Line].ToLower() == "dir current")
+                        {
+                            // Exec the help command
+                            // Add a text into the textbox1
+                            textBox1.Text += Environment.NewLine + System.IO.Directory.GetCurrentDirectory();
+                            LineLOC(2); // Add lines for the text outputed + Add a line for the next user input
+                            // ---- Set the cursor at the last letter ----
+                            textBox1.SelectionStart = textBox1.Text.Length;
+                            textBox1.SelectionLength = 0;
+                            // -------------------------------------------
+                        }
+                        else if (textBox1.Lines[Line].ToLower() == "close")
+                        {
+                            //Exec the close command
+                            Close();
+                        }
                         else
                         {
-                            if (textBox1.Lines[Line] == "close" || textBox1.Lines[Line] == "close")
-                            {
-                                //Exec the close command
-                                Close();
-                            }
-                            else
-                            {
-                                // here another command
-                                // WARNING: You must call LineLOC method in the last function (ex. close) in the else brackets
-                                LineLOC();
-                            }
+                            // here another command
+                            // WARNING: You must call LineLOC method in the last function (ex. close) in the else brackets
+                            LineLOC(1);
                         }
                     }
                 }
@@ -73,19 +92,22 @@ namespace MConsole
                 {
                     // There will be error if you dont fill the first command line with any text
                     // So I put here a "catch"
-                    LineLOC();
+                    LineLOC(1);
                 }
             }
         }
 
-        private void LineLOC() // Line Location Method
+        private void LineLOC(int times) // Line Location Method
         {
-            Line++;
-            if (Line < 17)
+            for (int i = 0; i < times; i++)
             {
-                // Sets up the location of the prompt (">")
-                // You can change the label1 Text when you are in different folders
-                label1.Location = new Point(label1.Location.X, label1.Location.Y + 16);
+                Line++;
+                if (Line < 17)
+                {
+                    // Sets up the location of the prompt (">")
+                    // You can change the label1 Text when you are in different folders
+                    label1.Location = new Point(label1.Location.X, label1.Location.Y + 16);
+                }
             }
         }
 

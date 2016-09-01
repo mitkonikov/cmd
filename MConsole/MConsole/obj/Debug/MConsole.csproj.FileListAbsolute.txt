@@ -7,3 +7,12 @@ c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\M
 c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.csproj.GenerateResource.Cache
 c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.exe
 c:\users\pcc\documents\visual studio 2012\Projects\MConsole\MConsole\obj\Debug\MConsole.pdb
+C:\work\cmd\MConsole\MConsole\bin\Debug\MConsole.exe.config
+C:\work\cmd\MConsole\MConsole\obj\Debug\MConsole.exe
+C:\work\cmd\MConsole\MConsole\obj\Debug\MConsole.pdb
+C:\work\cmd\MConsole\MConsole\bin\Debug\MConsole.exe
+C:\work\cmd\MConsole\MConsole\bin\Debug\MConsole.pdb
+C:\work\cmd\MConsole\MConsole\obj\Debug\MConsole.csprojResolveAssemblyReference.cache
+C:\work\cmd\MConsole\MConsole\obj\Debug\MConsole.Main.resources
+C:\work\cmd\MConsole\MConsole\obj\Debug\MConsole.Properties.Resources.resources
+C:\work\cmd\MConsole\MConsole\obj\Debug\MConsole.csproj.GenerateResource.Cache
